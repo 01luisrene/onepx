@@ -11,3 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+*.swp
+*.un~
+
+*.DS_Store 
