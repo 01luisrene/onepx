@@ -1,4 +1,5 @@
-environment ENV['RACK_ENV']
+environment ENV['RACK_ENV'] || 'development'
+port        ENV['PORT']     || 3000
 threads 0,5
 
 workers 3
