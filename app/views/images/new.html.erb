@@ -1,0 +1,26 @@
+<%- model_name = @image.class.model_name.human %>
+<h1><%= t('.title', model: model_name) %></h1>
+
+<%= form_for @image, builder: CustonFormBuilder do |form| %>
+	<%= form.form_error %>
+	<div class="field">
+		<%=form.label :name %>
+		<%=form.text_field :name %>
+	</div>
+	<div class="field">
+		<%= form.label :description%>
+		<%= form.text_area :description%>
+		<%= form.field_error :name %>
+	</div>
+	<div class="field">
+		<%= form.label :category%>
+		<%= form.collection_select :category, image_categories, :last, :first%>
+	</div>
+	<div class="field">
+		<%= form.label :tags_text %>
+		<%= form.text_field :tags_text %>
+	</div>
+	<div class="field">
+		<%= form.submit %>
+	</div>
+<% end %>

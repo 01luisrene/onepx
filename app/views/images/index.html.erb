@@ -1,1 +1,7 @@
-<h1><%= t('hello') %></h1>
+<h1><%= t('.title') %></h1>
+
+<%= link_to t('.new_link'), new_image_path %>
+
+<div class="images">
+	<%= render @images %>
+</div>
