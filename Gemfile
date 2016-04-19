@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'carrierwave'
 gem 'jquery-rails'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'mini_magick'
+#https://github.com/mariochavez/mac_generators
+gem 'mac_generators'
 gem 'pg'
 #configurarlo para producción
 #gem 'puma'
@@ -9,10 +13,8 @@ gem 'rails', '4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'warden', '~> 1.2.0'
+gem 'bcrypt-ruby'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
